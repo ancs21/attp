@@ -70,14 +70,8 @@ export default class Hero extends React.Component {
 
 	render() {
 		return (
-			<header className={ style.hero }>
+			
 				<Nav />
-				<div className={ style.titles }>
-					<h1>PWA</h1>
-					<h3>Universal Builder</h3>
-				</div>
-				<div ref={ x => this.shapes = x } className={ style.shapes } />
-			</header>
 		);
 	}
 }

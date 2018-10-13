@@ -26,18 +26,33 @@ export default class Nav extends React.Component {
 		}
 
 		return (
-			<nav className={ cls }>
-				<ul className={ style.links }>
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/blog">Blog</Link></li>
-					<li><Link to="/about">About</Link></li>
-				</ul>
-
-				<ul>
-					<li><a href="https://github.com/lukeed/pwa" className={ style.link_external }>GitHub</a></li>
-					<li><a href="https://github.com/lukeed/pwa" className={ style.link_external }>Documentation</a></li>
-				</ul>
-			</nav>
+			
+			<div>
+				<div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header className="mdl-layout__header mdl-layout__header--scroll">
+    <div className="mdl-layout__header-row">
+      <span className="mdl-layout-title">Title</span>
+      <div className="mdl-layout-spacer"></div>
+      <nav className="mdl-navigation">
+        <a className="mdl-navigation__link" href="">Link</a>
+        <a className="mdl-navigation__link" href="">Link</a>
+        <a className="mdl-navigation__link" href="">Link</a>
+        <a className="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div className="mdl-layout__drawer">
+    <span className="mdl-layout-title">Title</span>
+    <nav className="mdl-navigation">
+      <a className="mdl-navigation__link" href="">Link</a>
+      <a className="mdl-navigation__link" href="">Link</a>
+      <a className="mdl-navigation__link" href="">Link</a>
+      <a className="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  
+</div>
+			</div>
 		);
 	}
 }
