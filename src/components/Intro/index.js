@@ -78,8 +78,8 @@ export default function (props) {
 							<span className="mdl-list__item-sub-title">62 Episodes</span>
 							</span>
 							<span className="mdl-list__item-secondary-content">
-							<span className="mdl-list__item-secondary-info">Actor</span>
-							<a className="mdl-list__item-secondary-action" href="#"><i className="material-icons">star</i></a>
+							<span className="mdl-list__item-secondary-info">Rate</span>
+							<a className="mdl-list__item-secondary-action" href="#">5&nbsp;<i className="material-icons">star</i></a>
 							</span>
 						</li>
 						<li className="mdl-list__item mdl-list__item--two-line">
@@ -89,7 +89,7 @@ export default function (props) {
 							<span className="mdl-list__item-sub-title">62 Episodes</span>
 							</span>
 							<span className="mdl-list__item-secondary-content">
-							<a className="mdl-list__item-secondary-action" href="#"><i className="material-icons">star</i></a>
+							<a className="mdl-list__item-secondary-action" href="#">5&nbsp;<i className="material-icons">star</i></a>
 							</span>
 						</li>
 						<li className="mdl-list__item mdl-list__item--two-line">
@@ -99,7 +99,7 @@ export default function (props) {
 							<span className="mdl-list__item-sub-title">62 Episodes</span>
 							</span>
 							<span className="mdl-list__item-secondary-content">
-							<a className="mdl-list__item-secondary-action" href="#"><i className="material-icons">star</i></a>
+							<a className="mdl-list__item-secondary-action" href="#">5&nbsp;<i className="material-icons">star</i></a>
 							</span>
 						</li>
 						<li className="mdl-list__item">
