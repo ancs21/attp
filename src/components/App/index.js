@@ -28,15 +28,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className={style.app}>
+      <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <Nav />
         <main className="mdl-layout__content">
-        <div className="page-content">
           <Route path="/" exact component={Home} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/blog/:title" component={Article} />
           <Route path="/about" exact component={About} />
-          </div>
         </main>
 
         {/* <Footer /> */}
