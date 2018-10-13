@@ -16,18 +16,24 @@ const Map = ReactMapboxGl({
 function Home(props) {
   return (
     <div>
-      {/* <Window />
-
-      <Feats /> */}
       <Map
         style="mapbox://styles/mapbox/streets-v9"
         containerStyle={{
           height: '100vh',
           width: '100vw'
         }}
+        center={[106.6681927, 10.7751909]}
+        zoom={[12]}
       >
         <Marker
-          coordinates={[-0.481747846041145, 51.3233379650232]}
+          coordinates={[106.6681927, 10.7751909]}
+          anchor="bottom"
+          onClick={() => props.history.push('about')}
+        >
+          <img src={chilli} width="32" height="32" />
+        </Marker>
+        <Marker
+          coordinates={[106.6681927, 10.7751909]}
           anchor="bottom"
           onClick={() => props.history.push('about')}
         >
