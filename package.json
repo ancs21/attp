@@ -6,15 +6,18 @@
     "watch": "pwa watch"
   },
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
     "firebase": "^5.5.4",
     "ganalytics": "latest",
     "mapbox-gl": "^0.50.0",
+    "material-icons": "^0.2.3",
     "react": "latest",
     "react-dom": "latest",
     "react-loadable": "latest",
     "react-mapbox-gl": "^3.9.2",
     "react-router-dom": "latest",
-    "sirv-cli": "latest"
+    "sirv-cli": "latest",
+    "typeface-roboto": "0.0.54"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.1.0",
