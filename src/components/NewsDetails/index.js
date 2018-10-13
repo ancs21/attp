@@ -71,7 +71,7 @@ Organic Agriculture and Climate Change</h2>
 						<li className="mdl-list__item">
 						<div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style={{width:"100%"}}>
 							<textarea className="mdl-textfield__input" type="text" rows= "5" style={{width:"100%"}} id="comments"></textarea>
-							<label className="mdl-textfield__label" for="schools">Your comments</label>
+							<label className="mdl-textfield__label" for="comments">Your comments</label>
 						</div>
 						&nbsp;
 						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

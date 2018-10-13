@@ -8,13 +8,13 @@ import style from './index.sass';
 function Blog(props) {
 	return (
 		<Fragment>
-			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-				<div class="mdl-tabs__tab-bar">
-					<a href="#panel1" class="mdl-tabs__tab is-active">Organic Food</a>
-					<a href="#panel2" class="mdl-tabs__tab">Climate Change</a>
-					<a href="#panel3" class="mdl-tabs__tab">Others</a>
+			<div className="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+				<div className="mdl-tabs__tab-bar">
+					<a href="#panel1" className="mdl-tabs__tab is-active">Organic Food</a>
+					<a href="#panel2" className="mdl-tabs__tab">Climate Change</a>
+					<a href="#panel3" className="mdl-tabs__tab">Others</a>
 				</div>
-				<div class="mdl-tabs__panel is-active" id="panel1">
+				<div className="mdl-tabs__panel is-active" id="panel1">
 					<div className="mdl-grid">
 						<News/>
 						<News/>
@@ -22,7 +22,7 @@ function Blog(props) {
 						<News/>
 					</div>
 				</div>
-				<div class="mdl-tabs__panel" id="panel2">
+				<div className="mdl-tabs__panel" id="panel2">
 					<div className="mdl-grid">
 						<News/>
 						<News/>
@@ -30,7 +30,7 @@ function Blog(props) {
 						<News/>
 					</div>
 				</div>
-				<div class="mdl-tabs__panel" id="panel3">
+				<div className="mdl-tabs__panel" id="panel3">
 					<div className="mdl-grid">
 						<News/>
 						<News/>
