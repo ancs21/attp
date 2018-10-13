@@ -23,7 +23,7 @@ export default function (props) {
 					</div>
 					<div className="mdl-card__actions mdl-card--border">
 
-						<a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						<a className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style={{textAlign: "right"}}>
 							BUY THIS
 						</a>
 					</div>
@@ -99,7 +99,7 @@ export default function (props) {
 							<span className="mdl-list__item-sub-title">62 Episodes</span>
 							</span>
 							<span className="mdl-list__item-secondary-content">
-							<a className="mdl-list__item-secondary-action" href="#">5&nbsp;<i className="material-icons">star</i></a>
+							<span className="mdl-list__item-secondary-action" style ={{color: "#0064c8"}}>5&nbsp;<i className="material-icons">star</i></span>
 							</span>
 						</li>
 						<li className="mdl-list__item">
@@ -107,6 +107,7 @@ export default function (props) {
 							<textarea className="mdl-textfield__input" type="text" rows= "5" style={{width:"100%"}} id="comments"></textarea>
 							<label className="mdl-textfield__label" for="schools">Your comments</label>
 						</div>
+						&nbsp;
 						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
   							Post
 						</button>

@@ -34,9 +34,19 @@ class Nav extends React.Component {
             </a>
             <div className="mdl-layout-spacer" />
             <nav className="mdl-navigation">
+			<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+				<label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+				<i class="material-icons">search</i>
+				</label>
+				<div class="mdl-textfield__expandable-holder">
+				<input class="mdl-textfield__input" type="text" id="search"/>
+				<label class="mdl-textfield__label" for="search">Search</label>
+				</div>
+			</div>
+			&nbsp; &nbsp; 
               {!this.props.state.isAuth ? <a onClick={this.props.actions.handleSignInWithGoogle} className="mdl-navigation__link">
                 <i class="material-icons">account_circle</i> &nbsp; Login{' '}
-              </a> : <h6>{this.props.state.user.displayName}</h6>}
+              </a> : <h6 className="mdl-navigation__link">{this.props.state.user.displayName}</h6>}
 			  
             </nav>
           </div>
@@ -44,9 +54,12 @@ class Nav extends React.Component {
         <div className="mdl-layout__drawer">
           <span className="mdl-layout-title">ATTP</span>
           <nav className="mdl-navigation">
-            <a className="mdl-navigation__link" href="">
-              Account
-            </a>
+		  <Link className="mdl-navigation__link" to="/"><i class="material-icons">home</i> &nbsp;
+              Home</Link>
+			<Link className="mdl-navigation__link" to="/blog"><i class="material-icons">add_circle</i> &nbsp;
+              Sell your food</Link>
+			<Link className="mdl-navigation__link" to="/blog"><i class="material-icons">archive</i> &nbsp;
+			Manage your food</Link>
           </nav>
         </div>
       </Fragment>
