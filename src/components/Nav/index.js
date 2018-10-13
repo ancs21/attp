@@ -56,6 +56,8 @@ class Nav extends React.Component {
           <nav className="mdl-navigation">
 		  <Link className="mdl-navigation__link" to="/"><i class="material-icons">home</i> &nbsp;
               Home</Link>
+			  <Link className="mdl-navigation__link" to="/article"><i class="material-icons">whatshot</i> &nbsp;
+              News</Link>
 			<Link className="mdl-navigation__link" to="/blog"><i class="material-icons">add_circle</i> &nbsp;
               Sell your food</Link>
 			<Link className="mdl-navigation__link" to="/blog"><i class="material-icons">archive</i> &nbsp;

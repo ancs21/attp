@@ -15,6 +15,7 @@ const Home = load(() => import('@pages/Home'))
 const About = load(() => import('@pages/About'))
 const Article = load(() => import('@pages/Article'))
 const Blog = load(() => import('@pages/Blog'))
+const NewsDetail = load(() => import('@pages/NewsDetail'))
 
 class App extends React.Component {
   componentDidMount() {
@@ -33,8 +34,9 @@ class App extends React.Component {
         <main className="mdl-layout__content">
           <Route path="/" exact component={Home} />
           <Route path="/blog" exact component={Blog} />
-          <Route path="/blog/:title" component={Article} />
+          <Route path="/article" component={Article} />
           <Route path="/about" exact component={About} />
+          <Route path="/newsDetail" exact component={NewsDetail} />
         </main>
 
         {/* <Footer /> */}
