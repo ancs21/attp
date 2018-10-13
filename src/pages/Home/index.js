@@ -4,31 +4,36 @@ import { HMR } from '@pwa/preset-react'
 import Window from '@components/Window'
 import Feats from '@components/Feats'
 import style from './index.sass'
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import { Link } from 'react-router-dom'
+
+import ReactMapboxGl, { Layer, Feature, Marker } from 'react-mapbox-gl'
+import chilli from '../../icons/chilli.svg'
 
 const Map = ReactMapboxGl({
   accessToken:
     'pk.eyJ1IjoiYW5jczIxIiwiYSI6ImNqbjczYzVmczFocjkzcm52M2lqcGt1NzYifQ.BfGVNyqATkqHZImG9MxfRQ'
 })
-function Home() {
+function Home(props) {
   return (
     <div>
       {/* <Window />
 
       <Feats /> */}
       <Map
-  style="mapbox://styles/mapbox/streets-v9"
-  containerStyle={{
-    height: "100vh",
-    width: "100vw"
-  }}>
-    <Layer
-      type="symbol"
-      id="marker"
-      layout={{ "icon-image": "marker-15" }}>
-      <Feature coordinates={[-0.481747846041145, 51.3233379650232]}/>
-    </Layer>
-</Map>
+        style="mapbox://styles/mapbox/streets-v9"
+        containerStyle={{
+          height: '100vh',
+          width: '100vw'
+        }}
+      >
+        <Marker
+          coordinates={[-0.481747846041145, 51.3233379650232]}
+          anchor="bottom"
+          onClick={() => props.history.push('about')}
+        >
+          <img src={chilli} width="32" height="32" />
+        </Marker>
+      </Map>
       {/* <section className={style.section}>
         <h2>Installation</h2>
         <Code text="npm install --global @pwa/cli" />
