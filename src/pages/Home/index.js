@@ -15,45 +15,27 @@ const Map = ReactMapboxGl({
 })
 function Home(props) {
   return (
-    <div>
-      <Map
-        style="mapbox://styles/mapbox/streets-v9"
-        containerStyle={{
-          height: '100vh',
-          width: '100vw'
-        }}
-        center={[106.6681927, 10.7751909]}
-        zoom={[12]}
+    <Map
+      style="mapbox://styles/mapbox/streets-v9"
+      containerStyle={{
+        height: '100vh',
+        width: '100vw'
+      }}
+      center={[106.6681927, 10.7751909]}
+      zoom={[12]}
+    >
+      {/* <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
+        <Feature coordinates={[106.6681927, 10.7751909]} />
+		<Feature coordinates={[106.6681927,10.7751909]} />
+      </Layer> */}
+      <Marker
+        coordinates={[106.6681927, 10.7751909]}
+        anchor="bottom"
+        onClick={() => props.history.push('product/1')}
       >
-        <Marker
-          coordinates={[106.6681927, 10.7751909]}
-          anchor="bottom"
-          onClick={() => props.history.push('about')}
-        >
-          <img src={chilli} width="32" height="32" />
-        </Marker>
-        <Marker
-          coordinates={[106.6681927, 10.7751909]}
-          anchor="bottom"
-          onClick={() => props.history.push('about')}
-        >
-          <img src={chilli} width="32" height="32" />
-        </Marker>
-      </Map>
-      {/* <section className={style.section}>
-        <h2>Installation</h2>
-        <Code text="npm install --global @pwa/cli" />
-        <Code offset label="OR" text="yarn global add @pwa/cli" />
-      </section>
-
-      <section className={style.section}>
-        <h2>Commands</h2>
-        <Code label="Scaffold a new project!" text="pwa init" />
-        <Code label="Run development/live-reload server" text="pwa watch" />
-        <Code label="Build production bundle(s)" text="pwa build" />
-        <Code label="Generate static HTML exports" text="pwa export" />
-      </section> */}
-    </div>
+        <img src={chilli} width="32" height="32" />
+      </Marker>
+    </Map>
   )
 }
 
